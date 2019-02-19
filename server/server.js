@@ -4,6 +4,10 @@ const bodyParser = require('body-parser');
 const db = require('./config/keys').mongoURI;
 const path = require('path');
 
+//endpoint request handlers
+const posts = require('./routes/posts.js');
+const images = require('./routes/images.js');
+
 const app = express();
 
 app.use(bodyParser.json());
@@ -15,6 +19,10 @@ mongoose.connect(db, {useNewUrlParser:true})
 .catch((err)=>{
     console.log(err);
 });
+
+//ROUTES:
+app.use('/api/posts', posts);
+app.use('/api/images', images);
 
 //what to do in production mode
 if(process.env.NODE_ENV === 'production'){
@@ -30,4 +38,4 @@ app.listen(port, ()=>{
     console.log(`server started on port ${port}`);
 });
 
-module.exports = server; //need?
+module.exports = app; //need?
