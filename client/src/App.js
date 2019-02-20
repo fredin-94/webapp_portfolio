@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-     
+        <h1>placeholder title</h1>
       </div>
     );
   }
