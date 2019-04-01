@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Provider} from 'react-redux';
 import {Container} from 'reactstrap';
 import './App.css';
-import Navbar from './components/navbar.js';
+import MyNavbar from './components/navbar.js';
 import HomePage from './components/homePage.js';
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <Provider>
         <div className="App">
-          <Navbar/>
+          
           <Container>
             <HomePage/>
           </Container>

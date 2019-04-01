@@ -10,7 +10,7 @@ import {
     Container
 } from 'reactstrap';
 
-class Navbar extends Component{
+class MyNavbar extends Component{
 
     state = {
         isOpen : false
@@ -48,4 +48,4 @@ class Navbar extends Component{
     }
 }
 
-export default Navbar;
+export default MyNavbar;
