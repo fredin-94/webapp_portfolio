@@ -35,6 +35,8 @@ class MyNavbar extends Component{
                                     <NavLink href="#">
                                         Images
                                     </NavLink>
+                                </NavItem>
+                                <NavItem>
                                     <NavLink href="#">
                                         Posts
                                     </NavLink>
