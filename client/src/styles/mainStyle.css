@@ -1,0 +1,13 @@
+.footerMain{
+    background-color: aquamarine;
+
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+    height: 15%;
+    
+    padding-top: 3%;
+    text-align: center;
+}
