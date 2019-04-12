@@ -16,7 +16,7 @@ const imgPostSchema = new Schema({
     },
     year: { //what year it was created (not always same as the year of posting)
         type: Number
-    }
+    } //also add like types like: manga, realistic, photo, color, digital, analog and that kinda stuff i just dont know how right now
 });
 
 module.exports = mongoose.model('images', imgPostSchema);

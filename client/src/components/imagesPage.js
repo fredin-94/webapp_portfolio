@@ -3,9 +3,13 @@ import React, {Component} from 'react';
 
 class imagesPage extends Component{
     render(){
+        this.state = {
+            
+        }
+
         return(
             <div>
-                insert imgs from backend
+                <div></div>
             </div>
         );
     }
