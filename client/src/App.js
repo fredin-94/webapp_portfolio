@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-//import {Provider} from 'react-redux';
+import {Provider} from 'react-redux';
 import {Container} from 'reactstrap';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
+import store from "./store/store.js";
 import './App.css';
 import './styles/mainStyle.css';
 import MyNavbar from './components/navbar.js';
@@ -15,22 +16,24 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App">
-            <MyNavbar/>
-            <Container>
-                <Switch> 
-                  <Route exact path='/' component={Homepage}/>
-                  <Route path='/images' component={ImagesPage}/>
-                  <Route path='/posts' component={PostsPage}/>
-                </Switch>
-            </Container>
-            <Footer/>
-        </div>
+        
+          <div className="App">
+              <MyNavbar/>
+              <Container>
+              <Provider store = {store}>
+                  <Switch> 
+                    <Route exact path='/' component={Homepage}/>
+                    <Route path='/images' component={ImagesPage}/>
+                    <Route path='/posts' component={PostsPage}/>
+                  </Switch>
+                </Provider>
+              </Container>
+              <Footer/>
+          </div>
+        
       </BrowserRouter>
       
-      //<Provider>
-        
-      //</Provider>
+    
     );
   }
 }
