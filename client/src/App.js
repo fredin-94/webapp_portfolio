@@ -5,7 +5,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import store from "./store/store.js";
 import './App.css';
-import './styles/mainStyle.css';
+
 import MyNavbar from './components/navbar.js';
 import Footer from './components/footer.js';
 import Homepage from './components/homePage.js';
