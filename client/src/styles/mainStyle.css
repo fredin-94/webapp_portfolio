@@ -4,6 +4,14 @@ body{
     font-family: 'Playfair Display', serif;
 }
 
+a{
+    text-decoration: none;
+}
+
+.App{
+    
+}
+
 .headText{
     font-size: 12vw;
     padding-bottom: 0;
@@ -11,17 +19,30 @@ body{
 }
 .frontText{
     color: #bfbfbf;
+    padding-top: 8px;
 }
 .backText{
     color: #353535;
 }
-
-h2{
+.contentText{
     color: lightgray;
+    font-size: 1.2vw;
+    padding-top: 30px;
+    padding-left: 2.5%;
+}
+.innerContainer{
+    max-width: 600px;
+    
 }
 
+.footerShadow{
+    height: 20%;
+    background-color: blue;
+    top: 0;
+    position: sticky;
+}
 .footerMain{
-    background-color: aquamarine;
+    background-color: #f4f4f4;
 
     position: fixed;
     width: 100%;
@@ -33,3 +54,4 @@ h2{
     padding-top: 3%;
     text-align: center;
 }
+
