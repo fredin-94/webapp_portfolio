@@ -3,13 +3,15 @@ import React, {Component} from 'react';
 
 class imagesPage extends Component{
     render(){
-        this.state = {
+       /* this.state = {
             
-        }
+        }*/
 
         return(
             <div>
-                <div></div>
+                <div>
+                    
+                </div>
             </div>
         );
     }

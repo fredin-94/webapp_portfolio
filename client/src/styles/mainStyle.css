@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Playfair Display', serif;
+    
 }
 
 a{
@@ -9,7 +10,6 @@ a{
 }
 
 .App{
-    
 }
 
 .headText{
@@ -30,9 +30,8 @@ a{
     padding-top: 30px;
     padding-left: 2.5%;
 }
-.innerContainer{
-    max-width: 600px;
-    
+.outterContainer{
+    background-color: #efe7c2;
 }
 
 .footerShadow{
@@ -55,3 +54,25 @@ a{
     text-align: center;
 }
 
+.sideText{
+    writing-mode: tb-rl;
+    color: red;
+    font-weight: bold;
+}
+
+#sideTextContainer{
+
+}
+
+.mainArea{
+
+}
+
+.redLine {
+    border-left: 6px solid red;
+    height: 500px;
+  }
+
+  .rightArea{
+      float: left;
+  }

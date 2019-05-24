@@ -18,9 +18,8 @@ class App extends Component {
       <BrowserRouter>
         
           <div className="App">
-              <MyNavbar/>
               <Container>
-              <Provider store = {store}>
+                <Provider store = {store}>
                   <Switch> 
                     <Route exact path='/' component={Homepage}/>
                     <Route path='/images' component={ImagesPage}/>
@@ -28,7 +27,6 @@ class App extends Component {
                   </Switch>
                 </Provider>
               </Container>
-              <Footer/>
           </div>
         
       </BrowserRouter>
