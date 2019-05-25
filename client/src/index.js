@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App.js';
 import * as serviceWorker from './serviceWorker';
-import './styles/mainStyle.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; //import so we can have bootstrap
-
+import './styles/mainStyle.css';
+import './index.css';
 
 ReactDOM.render(
     <App />, 

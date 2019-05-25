@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Playfair Display', serif;
-    
+    margin-top: 20px;
 }
 
 a{
@@ -10,10 +10,11 @@ a{
 }
 
 .App{
+
 }
 
 .headText{
-    font-size: 12vw;
+    font-size: 9vw;
     padding-bottom: 0;
     line-height: 53.7%;
 }
@@ -32,6 +33,9 @@ a{
 }
 .outterContainer{
     background-color: #efe7c2;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 3%;
 }
 
 .footerShadow{
@@ -65,14 +69,18 @@ a{
 }
 
 .mainArea{
-
+    /*margin: 10%;*/
+    padding-left: 3%;
 }
 
 .redLine {
     border-left: 6px solid red;
-    height: 500px;
+    height: 100%;
   }
 
-  .rightArea{
-      float: left;
+.rightArea{
+      
   }
+.linksArea{
+    float: left;
+}
