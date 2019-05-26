@@ -19,7 +19,7 @@ class Homepage extends Component{
                             </p> 
                         </Col>
                         <Col xs="7">
-                            <div class="mainArea">
+                            <div className="mainArea">
                                 <h1 className="headText backText">Lucas</h1>
                                 <h1 className="headText frontText">Fredin</h1>
                                 <h3 className="contentText">Insert some text here about me or what i can do or about this website or quote or something, ya know, like adults do!</h3>
@@ -31,10 +31,10 @@ class Homepage extends Component{
                         <Col xs="3">
                             <div className="redLine">
                                 <div className="linksArea">
-                                    <ul>
-                                        <li><a href="/images">About me</a> </li>
-                                        <li><a href="/posts">My blog</a> </li>
-                                        <li><a href="/projects">My dev projects</a> </li>
+                                    <ul className="linksList">
+                                        <li><a href="/images">About me____    </a> </li>
+                                        <li><a href="/posts">My blog____    </a> </li>
+                                        <li><a href="/projects">My dev projects____    </a> </li>
                                     </ul>
                                 </div>
                             </div>

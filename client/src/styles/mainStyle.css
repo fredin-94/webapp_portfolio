@@ -9,6 +9,10 @@ a{
     text-decoration: none;
 }
 
+h1{
+    color: white;
+}
+
 .App{
 
 }
@@ -19,14 +23,13 @@ a{
     line-height: 53.7%;
 }
 .frontText{
-    color: #bfbfbf;
+    color: white;
     padding-top: 8px;
 }
 .backText{
-    color: #353535;
 }
 .contentText{
-    color: lightgray;
+    color: white;
     font-size: 1.2vw;
     padding-top: 30px;
     padding-left: 2.5%;
@@ -82,5 +85,19 @@ a{
       
   }
 .linksArea{
-    float: left;
+    /*float: left;*/
+    padding: 0;
+}
+.linksList{
+    list-style-type: none;
+    padding: 0;
+}
+
+.linksList a{
+    color: red;
+    text-decoration: underline;
+}
+.linksList li :hover{
+    color: crimson;
+    font-weight: bold;
 }
