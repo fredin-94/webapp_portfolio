@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 //import { Button } from 'reactstrap';
 
-class imagesPage extends Component{
+class ImagesPage extends Component{
     render(){
        /* this.state = {
             
@@ -17,4 +17,4 @@ class imagesPage extends Component{
     }
 }
 
-export default imagesPage;
+export default ImagesPage;

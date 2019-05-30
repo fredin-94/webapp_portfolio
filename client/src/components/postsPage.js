@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 //import { Button } from 'reactstrap';
 
-class postsPage extends Component{
+class PostsPage extends Component{
     render(){
         return(
             <div>
@@ -11,4 +11,4 @@ class postsPage extends Component{
     }
 }
 
-export default postsPage;
+export default PostsPage;

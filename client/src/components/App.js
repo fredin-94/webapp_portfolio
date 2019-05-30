@@ -3,14 +3,13 @@ import {Provider} from 'react-redux';
 import {Container} from 'reactstrap';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
-import store from "./store/store.js";
-import './App.css';
+import store from "../store/store.js";
 
-import MyNavbar from './components/navbar.js';
-import Footer from './components/footer.js';
-import Homepage from './components/homePage.js';
-import ImagesPage from './components/imagesPage.js';
-import PostsPage from './components/postsPage.js';
+import MyNavbar from './Navbar.js';
+import Footer from './Footer.js';
+import Homepage from './Homepage.js';
+import ImagesPage from './ImagesPage.js';
+import PostsPage from './PostsPage.js';
 
 class App extends Component {
   render() {

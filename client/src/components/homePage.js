@@ -1,22 +1,44 @@
 import React, {Component} from 'react';
-import {Row, Col } from 'reactstrap';
+import {Row, Col} from 'reactstrap';
 import GitHub from 'react-icons/lib/fa/github-square';
 import GitLab from 'react-icons/lib/fa/gitlab';
 import LinkedIn from 'react-icons/lib/fa/linkedin';
 
+import Thumbnail from './Thumbnail';
+import ApprovalCard from './ApprovalCard.js';
+
 class Homepage extends Component{
+
+    state = { title: 'hello', errorMsg: '' };
+
+    //Lifecycle methods (some of them):
+    componentDidMount(){
+        //main for data loading
+    }
+    componentDidUpdate(){ 
+        //tex when set state is called or we get new props this will run
+    }
+
+    renderSideText(){
+        if(this.state.title === 'hello'){
+            return(
+                <p className="sideText"> 
+                    &lt;h1 frontEnd="ReactJS Redux VueJS D3JS JQuery HTML5 CSS3"> <br/>
+                    &lt;h2 backEnd="NodeJS .net MongoDB SQL"> <br/>
+                    &lt;h3 softwareEngineering="UX RestAPI MVC Git Docker Heroku"> <br/>
+                    &lt;h4 generalProgramming="Java JavaScript C C++ C#"> <br/>
+                </p> 
+            );
+        }
+    }
+    
     render(){
         return(
-            <div>
+            <div className="homepage">
                 <div className="outterContainer">
                     <Row>
                         <Col xs="2">
-                            <p className="sideText"> 
-                                &lt;h1 frontEnd="ReactJS Redux VueJS D3JS JQuery HTML5 CSS3"> <br/>
-                                &lt;h2 backEnd="NodeJS .net MongoDB SQL"> <br/>
-                                &lt;h3 softwareEngineering="UX RestAPI MVC Git Docker Heroku"> <br/>
-                                &lt;h4 generalProgramming="Java JavaScript C C++ C#"> <br/>
-                            </p> 
+                                {this.renderSideText()}
                         </Col>
                         <Col xs="7">
                             <div className="mainArea">
@@ -26,6 +48,9 @@ class Homepage extends Component{
                                 <GitHub />
                                 <GitLab />
                                 <LinkedIn />
+                                <ApprovalCard>
+                                    <Thumbnail projectTitle="proj1" projectDate="2019" image="https://media.moddb.com/images/engines/1/1/984/img-placeholder.2.jpg" />
+                                </ApprovalCard>
                             </div>
                         </Col>
                         <Col xs="3">
