@@ -1,0 +1,9 @@
+.small-img{
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+}
+
+.small-img:hover{
+    opacity: 0.3;
+}

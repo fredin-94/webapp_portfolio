@@ -5,13 +5,13 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import store from "../store/store.js";
 
-import MyNavbar from './Navbar.js';
-import Footer from './Footer.js';
 import Homepage from './Homepage.js';
 import ImagesPage from './ImagesPage.js';
 import PostsPage from './PostsPage.js';
+import Projects from './Projects.js';
 
 class App extends Component {
+  
   render() {
     return (
       <BrowserRouter>
@@ -23,6 +23,7 @@ class App extends Component {
                     <Route exact path='/' component={Homepage}/>
                     <Route path='/images' component={ImagesPage}/>
                     <Route path='/posts' component={PostsPage}/>
+                    <Route path='/projects' component={Projects}/>
                   </Switch>
                 </Provider>
               </Container>

@@ -1,5 +1,6 @@
 import React from 'react';
 
+//remake this to be used for a single project or single image(?)
 const ApprovalCard = (props)=>{
     return(
         <div>
