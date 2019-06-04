@@ -17,7 +17,6 @@ class App extends Component {
       <BrowserRouter>
         
           <div className="App">
-              <Container>
                 <Provider store = {store}>
                   <Switch> 
                     <Route exact path='/' component={Homepage}/>
@@ -26,7 +25,6 @@ class App extends Component {
                     <Route path='/projects' component={Projects}/>
                   </Switch>
                 </Provider>
-              </Container>
           </div>
         
       </BrowserRouter>
