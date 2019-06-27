@@ -1,4 +1,5 @@
 import {ADD_POST} from '../actions/actionTypes.js';
+import {ADD_IMAGE} from '../actions/actionTypes.js';
 
 const initialState = {
     posts: []
@@ -11,6 +12,12 @@ function rootReducer(state = initialState, action){
         });
     }
     return state;
+}
+
+const reducerTest = (state = initialState,action)=>{
+    if(action.type === ADD_IMAGE){
+        return[...state, action.payload] //creates a new array and adds the new data to it
+    }
 }
 
 //we should not use push since that changes the state

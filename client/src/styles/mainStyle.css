@@ -17,7 +17,6 @@ h1{
 .outterContainer{
     padding-top: 3%;
     padding-bottom: 3%;
-    padding-right: 3%;
 }
 
 .welcome{
@@ -26,7 +25,6 @@ h1{
 
 .iconBar{
     text-align: center;
-   
 }
 .iconBar a{
     color:black;
@@ -36,6 +34,14 @@ h1{
 }
 .iconBar a + a{
     padding-left: 3em;
+}
+
+.contactInfo{
+    display:inline-block;
+}
+
+.icon{
+    position:relative;
 }
 
 .footerShadow{
@@ -106,7 +112,7 @@ h1{
 }
 
 .img-content{
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 70px;
 }
 
@@ -117,3 +123,20 @@ h1{
     padding-bottom: 60px;
 }
 
+
+
+/*MEDIA SCREEN SIZES*/
+@media only screen and (max-width: 768px) {
+    .sideText{
+        visibility: hidden;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .iconBar{
+        display: inline-flex;
+        font-size: 5px;
+
+    }
+    
+}

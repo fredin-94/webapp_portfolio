@@ -5,4 +5,5 @@ export const LOADING_POSTS = 'LOADING_POSTS';
 
 export const GET_IMAGES = 'GET_IMAGES';
 export const GET_IMAGE = 'GET_IMAGE';
+export const ADD_IMAGE = 'ADD_IMAGE';
 export const LOADING_IMAGES = 'LOADING_IMAGES';
