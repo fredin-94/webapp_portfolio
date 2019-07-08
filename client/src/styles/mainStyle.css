@@ -119,8 +119,11 @@ h1{
 .aboutMeSection{
     background-color: red;
     color: white;
-    padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.testimonialsSection{
+    padding-top: 60px;
 }
 
 

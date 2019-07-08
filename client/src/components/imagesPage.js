@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-//import { Button } from 'reactstrap';
+import ContentArea from './ContentArea';
+import PostsPage from './PostsPage';
 
 class ImagesPage extends Component{
     render(){
@@ -9,9 +10,9 @@ class ImagesPage extends Component{
 
         return(
             <div>
-                <div>
-                    
-                </div>
+                <ContentArea title="Posts">
+                    <PostsPage/>
+                </ContentArea>
             </div>
         );
     }

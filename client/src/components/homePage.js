@@ -10,13 +10,15 @@ import Email from 'react-icons/lib/fa/at';
 
 import Thumbnail from './Thumbnail';
 import Testimonials from './Testimonials';
+import ContentArea from './ContentArea';
 
 class Homepage extends Component{
 
     state = { 
         title: 'hello', 
         errorMsg: '', 
-        images: [] 
+        images: [],
+        testimonials: [] 
     };
 
     //Lifecycle methods (some of them):
@@ -98,39 +100,33 @@ class Homepage extends Component{
                                 </Col>
                             </Row>
                         </div>
-                        
-                        <div class="img-content">
-                            <h2>Most recent work</h2>
-                            <hr/>
-                            <Thumbnail images={this.state.images}/>
-                            <a href="/images">See more</a>
-
-                            <hr/> {/*show only if testimonials exist*/}
-                            <Testimonials title="Testimonials: "/>
-
-                        </div>
                     </div>
-                </Container>
+                </Container>    
 
-                <div class="aboutMeSection">
-                    <Container>
-                        <h2>About me</h2>
-                        <hr style={{borderColor: 'white'}}/>
-                        <h4>Education:</h4>
+                <ContentArea title="Most recent work ">
+                    <Thumbnail images={this.state.images}/>
+                    <a href="/images">See more</a>
+                </ContentArea>
+
+                <ContentArea title="Testimonials "> {/*show only if testimonials exist*/}
+                    <Testimonials/>
+                </ContentArea>
+                        
+                 <ContentArea contentColor="white" backgroundColor="red" title="About Me ">
+                    <h4>Education:</h4>
                         <p>I graduated the SEM program at GU year 2020, yeee</p>
                         <p>Then in my future i graduate from some nice masters program, plz</p>
-                        <h4>Experiences:</h4>
+                    <h4>Experiences:</h4>
                         <p>I went to japan and learned shit</p>
                         <p>I have worked with some stuff, you know</p>
-                        <h4>Stuff I like:</h4>
+                    <h4>Stuff I like:</h4>
                         <p>not embedded systems at least!</p>
-                    </Container>
-                </div>
+                    <h4>Specializations:</h4>
+                        <p>webdev stuff, kuwashiku ha nai kedo...</p>
+                    
+                 </ContentArea>
+
             </div>
-            
-
-            
-
         );
     }
 }
