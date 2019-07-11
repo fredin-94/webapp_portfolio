@@ -1,20 +1,26 @@
 .small-img{
     position: relative;
+    text-align:center;
+}
+
+.small-img img{
+    opacity: 1;
+    transition: opacity .9s ease-out;
+    -moz-transition: opacity .9s ease-out;
+    -webkit-transition: opacity .9s ease-out;
+    -o-transition: opacity .9s ease-out;
 }
 
 /* how to get them all in one?? */
 .small-img:hover img{
-    opacity: 0.3;
-    transition: .5s ease;
+    opacity: .3;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
 }
-.small-img:hover p{
-    opacity: 0.3;
-    transition: .5s ease;
-}
-.small-img:hover h4{
-    opacity: 0.3;
-    transition: .5s ease;
-}
+
+
 
 
 .small-img:hover .project-tags {
@@ -25,12 +31,11 @@
 
 .project-tags{
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     color: red;
     visibility: hidden;
     opacity: 0;
     font-weight: bold;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
