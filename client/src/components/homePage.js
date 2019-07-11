@@ -112,7 +112,7 @@ class Homepage extends Component{
                     <Testimonials/>
                 </ContentArea>
                         
-                 <ContentArea contentColor="white" backgroundColor="red" title="About Me ">
+                 <ContentArea contentColor="white" backgroundColor="red" title="If you still want to know more ">
                     <h4>Education:</h4>
                         <p>I graduated the SEM program at GU year 2020, yeee</p>
                         <p>Then in my future i graduate from some nice masters program, plz</p>

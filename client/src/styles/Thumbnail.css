@@ -1,10 +1,36 @@
 .small-img{
-    transition: .5s ease;
-    backface-visibility: hidden;
-    opacity: 1;
+    position: relative;
 }
 
-.small-img:hover{
+/* how to get them all in one?? */
+.small-img:hover img{
     opacity: 0.3;
+    transition: .5s ease;
+}
+.small-img:hover p{
+    opacity: 0.3;
+    transition: .5s ease;
+}
+.small-img:hover h4{
+    opacity: 0.3;
+    transition: .5s ease;
 }
 
+
+.small-img:hover .project-tags {
+    visibility: visible;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.project-tags{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: red;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+}
