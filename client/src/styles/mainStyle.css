@@ -15,12 +15,8 @@ h1{
 }
 
 .outterContainer{
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
-.welcome{
-    
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .iconBar{
@@ -109,6 +105,16 @@ h1{
 .linksList li :hover{
     color: crimson;
     font-weight: bold;
+}
+
+.skill-list{
+    padding-top: 30px;
+}
+.skill-list p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    color: red;
 }
 
 .img-content{

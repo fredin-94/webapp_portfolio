@@ -10,6 +10,7 @@ router.get('/', (req,res,next)=>{
         res.status(200).json(images);
     })
     .catch((err)=>{
+        console.log("error on serverside get request for projects");
         return next(err);
     });
 });

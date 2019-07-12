@@ -15,7 +15,6 @@ import ContentArea from './ContentArea';
 class Homepage extends Component{
 
     state = { 
-        title: 'hello', 
         errorMsg: '', 
         images: [],
         testimonials: [] 
@@ -26,13 +25,13 @@ class Homepage extends Component{
         //main for data loading
         axios.get('/api/images')
         .then((res)=>{
-            console.log("got a response");            
+            console.log("got a response from MONGO");            
             this.setState({images: res.data});
             console.log("data: " + res.imgurl +" res: " + JSON.stringify(res));
             console.log("images found: " + this.state.images.length);            
         })
         .catch((err)=>{
-            console.log("got an error");
+            console.log("got an error from MONGO  -->  " + err);
         });
     }
     
@@ -57,49 +56,46 @@ class Homepage extends Component{
         return(
             <div className="homepage">
                 <Container>
-                    <div class="welcome">
-                        <div className="outterContainer">
-                            <Row>
-                                <Col xs="2">
-                                    <div class="left-border">
-                                        {this.renderSideText()}
+                    <div className="outterContainer">
+                        <Row>
+                            <Col xs="2">
+                                
+                            </Col>
+                            <Col xs="7">
+                                <div className="mainArea">
+                                    <h1>Lucas Fredin</h1>
+                                    <h4>Software Engineer and Fullstack developer with a passion for everything web-dev</h4>
+                                    
+                                    <div className="contactInfo">
+                                        <Phone className="icon" size={15}/>
+                                        098-542-3424
+                                        <p>   </p>
+                                        <Email className="icon" size={15}/>
+                                        l.fredin@mail.com
                                     </div>
-                                </Col>
-                                <Col xs="7">
-                                    <div className="mainArea">
-                                        <h1>Lucas Fredin</h1>
-                                        <h3>Software Engineer and Fullstack developer with a passion for everything web-dev</h3>
-                                        
-                                        <div className="contactInfo">
-                                            <Phone className="icon" size={15}/>
-                                            098-542-3424
-                                            <p>   </p>
-                                            <Email className="icon" size={15}/>
-                                            l.fredin@mail.com
-                                        </div>
-                                        
-                                        <hr/>
+                                    
+                                    <hr/>
 
-                                        <div class="iconBar">
-                                            <a href="/"><GitHub size={40}/></a>
-                                            <a href="/"><GitLab size={40}/></a>
-                                            <a href="/"><LinkedIn size={40}/></a>
-                                        </div>
+                                    <div className="iconBar">
+                                        <a href="/"><GitHub size={40}/></a>
+                                        <a href="/"><GitLab size={40}/></a>
+                                        <a href="/"><LinkedIn size={40}/></a>
                                     </div>
-                                </Col>
-                                <Col xs="3">
-                                    <div className="redLine">
-                                        <div className="linksArea">
-                                            <ul className="linksList">
-                                                <li><a href="/images">About me____    </a> </li>
-                                                <li><a href="/posts">My blog____    </a> </li>
-                                                <li><a href="/projects">My dev projects____      </a> </li>
-                                            </ul>
-                                        </div>
+
+                                    <div className="skill-list">
+                                        <p>
+                                        &lt;h1 frontEnd="ReactJS Redux VueJS D3JS JQuery HTML5 CSS3"> <br/>
+                                        &lt;h2 backEnd="NodeJS .net MongoDB SQL"> <br/>
+                                        &lt;h3 softwareEngineering="UX RestAPI MVC Git Docker Heroku"> <br/>
+                                        &lt;h4 generalProgramming="Java JavaScript C C++ C#"> <br/>
+                                        </p>
                                     </div>
-                                </Col>
-                            </Row>
-                        </div>
+                                </div>
+                            </Col>
+                            <Col xs="3">
+                                
+                            </Col>
+                        </Row>
                     </div>
                 </Container>    
 
