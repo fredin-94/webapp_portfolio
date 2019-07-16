@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
-body{
+body, html{
     font-family: 'Playfair Display', serif;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin: 0px;
+    height: 100%;
+    padding: 0px;
 }
 
 a{
@@ -14,8 +15,24 @@ h1{
     color: red;
 }
 
-.outterContainer{
-    padding-top: 10%;
+.parallax-bg{
+    background-image: url("https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+
+    height: 100%;
+    width: 100%;
+    min-height: 500px;
+    min-width: auto;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+   padding-top: 10%;
     padding-bottom: 10%;
 }
 
@@ -145,7 +162,5 @@ h1{
     .iconBar{
         display: inline-flex;
         font-size: 5px;
-
     }
-    
 }

@@ -54,18 +54,18 @@ class Homepage extends Component{
     
     render(){
         return(
-            <div className="homepage">
-                <Container>
-                    <div className="outterContainer">
+            <div>
+                <div className="parallax-bg">
+                    <Container>
                         <Row>
-                            <Col xs="2">
-                                
-                            </Col>
+                            <Col xs="2"></Col>
                             <Col xs="7">
+
                                 <div className="mainArea">
                                     <h1>Lucas Fredin</h1>
                                     <h4>Software Engineer and Fullstack developer with a passion for everything web-dev</h4>
                                     
+
                                     <div className="contactInfo">
                                         <Phone className="icon" size={15}/>
                                         098-542-3424
@@ -92,12 +92,10 @@ class Homepage extends Component{
                                     </div>
                                 </div>
                             </Col>
-                            <Col xs="3">
-                                
-                            </Col>
+                            <Col xs="3"></Col>
                         </Row>
-                    </div>
-                </Container>    
+                    </Container>    
+                </div>
 
                 <ContentArea title="Most recent work ">
                     <Thumbnail images={this.state.images}/>
