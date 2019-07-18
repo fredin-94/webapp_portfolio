@@ -36,6 +36,18 @@ h1{
     padding-bottom: 10%;
 }
 
+.sidePicture{
+    background-image: url("https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    min-height: 100px;
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
 .iconBar{
     text-align: center;
 }
@@ -139,10 +151,18 @@ h1{
     padding-bottom: 70px;
 }
 
-.aboutMeSection{
+/*.aboutMeSection{
     background-color: red;
     color: white;
     padding-bottom: 60px;
+}*/
+.noSidePad{
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+}
+.aboutArea{
+    padding: 13%;
+    background-color: red;
 }
 
 .testimonialsSection{

@@ -102,24 +102,35 @@ class Homepage extends Component{
                     <a href="/images">See more</a>
                 </ContentArea>
 
-                <ContentArea title="Testimonials "> {/*show only if testimonials exist*/}
-                    <Testimonials/>
+                {/*
+                 <ContentArea title="Testimonials "> 
+                 <Testimonials/>
                 </ContentArea>
-                        
-                 <ContentArea contentColor="white" backgroundColor="red" title="If you still want to know more ">
-                    <h4>Education:</h4>
-                        <p>I graduated the SEM program at GU year 2020, yeee</p>
-                        <p>Then in my future i graduate from some nice masters program, plz</p>
-                    <h4>Experiences:</h4>
-                        <p>I went to japan and learned shit</p>
-                        <p>I have worked with some stuff, you know</p>
-                    <h4>Stuff I like:</h4>
-                        <p>not embedded systems at least!</p>
-                    <h4>Specializations:</h4>
-                        <p>webdev stuff, kuwashiku ha nai kedo...</p>
-                    
-                 </ContentArea>
+                 */}
 
+                <Row>
+                    <Col xs="7" className="noSidePad">
+
+                        <div className="aboutArea">
+                            <ContentArea contentColor="white"  title="If you still want to know more ">
+                                <h4>Education:</h4>
+                                    <p>I graduated the SEM program at GU year 2020, yeee</p>
+                                    <p>Then in my future i graduate from some nice masters program, plz</p>
+                                <h4>Experiences:</h4>
+                                    <p>I went to japan and learned shit</p>
+                                    <p>I have worked with some stuff, you know</p>
+                                <h4>Stuff I like:</h4>
+                                    <p>not embedded systems at least!</p>
+                                <h4>Specializations:</h4>
+                                    <p>webdev stuff, kuwashiku ha nai kedo...</p>
+                            </ContentArea>
+                        </div>
+
+                    </Col>
+                    <Col xs="5" className="noSidePad">
+                        <div className="sidePicture"></div>
+                    </Col>
+                </Row>     
             </div>
         );
     }
