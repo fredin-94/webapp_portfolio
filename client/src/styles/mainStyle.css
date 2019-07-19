@@ -1,18 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 body, html{
-    font-family: 'Playfair Display', serif;
     margin: 0px;
     height: 100%;
     padding: 0px;
 }
+body h1 h2 h3 h4{
+    /*font-family: 'Playfair Display', serif;*/
+    font-family: 'Kanit', sans-serif;
+    color: #522b47;
+}
+
+body p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #fbf5f3;
+}
+
+.mainHeader{
+    border-top:  3px solid #7fb7be;
+    border-bottom: 3px solid #7fb7be;
+    text-align: center;    
+}
+
 
 a{
     text-decoration: none;
 }
 
 h1{
-    color: red;
+    color: #bf1a49;
 }
 
 .parallax-bg{
@@ -55,7 +74,7 @@ h1{
     color:black;
 }
 .iconBar a:hover{
-    color:maroon;
+    color:#bf1a49;
 }
 .iconBar a + a{
     padding-left: 3em;
@@ -68,7 +87,7 @@ h1{
 .icon{
     position:relative;
 }
-
+/*
 .footerShadow{
     height: 20%;
     background-color: blue;
@@ -91,26 +110,26 @@ h1{
 
 .sideText{
     writing-mode: tb-rl;
-    color: red;
+    color: #bf1a49;
     font-weight: bold;
 }
 
 #sideTextContainer{
 
 }
-
+*/
 .mainArea{
     /*margin: 10%;*/
-    padding-left: 3%;
+    padding: 15%;
 }
 
-.redLine {
-    border-right: 6px solid red;
+.#bf1a49Line {
+    border-right: 6px solid #bf1a49;
     height: 100%;
   }
 
 .left-border{
-    border-left: 6px solid red;
+    border-left: 6px solid #bf1a49;
     height: 100%;
 }
 
@@ -128,11 +147,11 @@ h1{
 }
 
 .linksList a{
-    color: red;
+    color: #bf1a49;
     text-decoration: underline;
 }
 .linksList li :hover{
-    color: crimson;
+    color: #bf1a49;
     font-weight: bold;
 }
 
@@ -143,7 +162,7 @@ h1{
     margin-left: auto;
     margin-right: auto;
     width: 30em;
-    color: red;
+    color: #bf1a49;
 }
 
 .img-content{
@@ -152,7 +171,7 @@ h1{
 }
 
 /*.aboutMeSection{
-    background-color: red;
+    background-color: #bf1a49;
     color: white;
     padding-bottom: 60px;
 }*/
@@ -161,8 +180,11 @@ h1{
     padding-right: 0% !important;
 }
 .aboutArea{
-    padding: 13%;
-    background-color: red;
+    padding-top: 13%;
+    padding-bottom: 13%;
+    padding-left: 17%;
+    padding-right: 23%;
+    background-color: #bf1a49;
 }
 
 .testimonialsSection{
@@ -184,3 +206,11 @@ h1{
         font-size: 5px;
     }
 }
+
+
+::selection {
+    background: #7fb7be; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #7fb7be; /* Gecko Browsers */
+  }

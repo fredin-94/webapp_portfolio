@@ -4,12 +4,12 @@ li{
 
 a{
     text-decoration: none;
-    color: black !important;
+    color: #211e1e !important;
 }
 
 a:hover{
     text-decoration: none !important;
-    color: red !important;
+    color: #7fb7be !important;
 }
 
 a:hover h4 {

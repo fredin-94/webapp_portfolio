@@ -62,7 +62,9 @@ class Homepage extends Component{
                             <Col xs="7">
 
                                 <div className="mainArea">
-                                    <h1>Lucas Fredin</h1>
+                                    <div className="mainHeader">
+                                        <h1>Lucas Fredin</h1>
+                                    </div>
                                     <h4>Software Engineer and Fullstack developer with a passion for everything web-dev</h4>
                                     
 
@@ -82,6 +84,8 @@ class Homepage extends Component{
                                         <a href="/"><LinkedIn size={40}/></a>
                                     </div>
 
+                                    
+                                    {/*
                                     <div className="skill-list">
                                         <p>
                                         &lt;h1 frontEnd="ReactJS Redux VueJS D3JS JQuery HTML5 CSS3"> <br/>
@@ -90,6 +94,8 @@ class Homepage extends Component{
                                         &lt;h4 generalProgramming="Java JavaScript C C++ C#"> <br/>
                                         </p>
                                     </div>
+                                     */}
+
                                 </div>
                             </Col>
                             <Col xs="3"></Col>
@@ -109,10 +115,10 @@ class Homepage extends Component{
                  */}
 
                 <Row>
-                    <Col xs="7" className="noSidePad">
+                    <Col xs="6" className="noSidePad">
 
                         <div className="aboutArea">
-                            <ContentArea contentColor="white"  title="If you still want to know more ">
+                            <ContentArea contentColor="#fbf5f3"  title="If you still want to know more ">
                                 <h4>Education:</h4>
                                     <p>I graduated the SEM program at GU year 2020, yeee</p>
                                     <p>Then in my future i graduate from some nice masters program, plz</p>
@@ -127,7 +133,7 @@ class Homepage extends Component{
                         </div>
 
                     </Col>
-                    <Col xs="5" className="noSidePad">
+                    <Col xs="6" className="noSidePad">
                         <div className="sidePicture"></div>
                     </Col>
                 </Row>     
