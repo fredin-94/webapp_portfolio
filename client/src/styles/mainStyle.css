@@ -22,7 +22,15 @@ body{
 .mainHeader{
     border-top:  3px solid #7fb7be;
     border-bottom: 3px solid #7fb7be;
-    text-align: center;    
+    text-align: center;  
+    padding: 15px;  
+}
+.underText{
+    padding: 20px 20px 0 20px;
+}
+
+.portfolio{
+    padding: 5% 10% 8% 10%;
 }
 
 
@@ -51,8 +59,7 @@ h1{
     -moz-background-size: cover;
     -o-background-size: cover;
 
-   padding-top: 10%;
-    padding-bottom: 10%;
+    padding: 5% 0 10% 0;
 }
 
 .sidePicture{
@@ -82,6 +89,7 @@ h1{
 
 .contactInfo{
     display:inline-block;
+    padding: 0 20px 0 20px;
 }
 
 .icon{
@@ -123,15 +131,7 @@ h1{
     padding: 15%;
 }
 
-.#bf1a49Line {
-    border-right: 6px solid #bf1a49;
-    height: 100%;
-  }
 
-.left-border{
-    border-left: 6px solid #bf1a49;
-    height: 100%;
-}
 
 .rightArea{
       

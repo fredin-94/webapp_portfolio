@@ -1,10 +1,19 @@
 .img-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /*MIN is 250px, 1fr is to make them all the same size as max*/
+    /*display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); MIN is 250px, 1fr is to make them all the same size as max
     grid-gap: 10px;
     grid-auto-rows: auto;
     justify-items: center;
     align-items: center;
+    justify-content: center;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.small-img{ /*the outter div of all elements*/
+    flex-grow: 1;
+    padding: 5px 0 20px 0;
 }
 
 .img-grid div{

@@ -59,15 +59,16 @@ class Homepage extends Component{
                     <Container>
                         <Row>
                             <Col xs="2"></Col>
-                            <Col xs="7">
+                            <Col xs="8">
 
                                 <div className="mainArea">
                                     <div className="mainHeader">
                                         <h1>Lucas Fredin</h1>
                                     </div>
-                                    <h4>Software Engineer and Fullstack developer with a passion for everything web-dev</h4>
+                                    <div className="underText">
+                                        <p>Software Engineer and Fullstack developer with a passion for everything web-dev</p>
+                                    </div>
                                     
-
                                     <div className="contactInfo">
                                         <Phone className="icon" size={15}/>
                                         098-542-3424
@@ -98,15 +99,18 @@ class Homepage extends Component{
 
                                 </div>
                             </Col>
-                            <Col xs="3"></Col>
+                            <Col xs="2"></Col>
                         </Row>
                     </Container>    
                 </div>
 
-                <ContentArea title="Most recent work ">
-                    <Thumbnail images={this.state.images}/>
-                    <a href="/images">See more</a>
-                </ContentArea>
+                <div className="portfolio">
+                    <ContentArea title="Most recent work ">
+                        <Thumbnail images={this.state.images}/>
+                        <a href="/images">See more</a>
+                    </ContentArea>
+                </div>                     
+                
 
                 {/*
                  <ContentArea title="Testimonials "> 
