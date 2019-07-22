@@ -131,11 +131,6 @@ h1{
     padding: 15%;
 }
 
-
-
-.rightArea{
-      
-  }
 .linksArea{
     /*float: left;*/
     padding: 0;
@@ -211,6 +206,6 @@ h1{
 ::selection {
     background: #7fb7be; /* WebKit/Blink Browsers */
   }
-  ::-moz-selection {
+::-moz-selection {
     background: #7fb7be; /* Gecko Browsers */
   }

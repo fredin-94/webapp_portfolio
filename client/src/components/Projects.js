@@ -1,18 +1,33 @@
 import React, {Component} from 'react';
-import Thumbnail from './Thumbnail';
+import axios from 'axios';
+
+import ListProjects from './ListProjects';
+import ContentArea from './ContentArea';
 
 class Projects extends Component{
-    
-    state = {
-        year: null
+
+    state = { 
+        errorMsg: '', 
+        projects: []
+    };
+
+    //Lifecycle methods (some of them):
+    componentDidMount = () => {
+        //main for data loading
+        axios.get('/api/images')
+        .then((res)=>{
+            console.log("got a response from MONGO");            
+            this.setState({images: res.data});
+            console.log("data: " + res.imgurl +" res: " + JSON.stringify(res));
+            console.log("images found: " + this.state.images.length);            
+        })
+        .catch((err)=>{
+            console.log("got an error from MONGO  -->  " + err);
+        });
     }
 
     onSearchSubmit = (searchTerm) =>{
     
-    }
-
-    componentDidMount = () => {
-
     }
 
     onClickChange = (event) => {
@@ -27,10 +42,12 @@ class Projects extends Component{
     render(){
         return(
             <div className="projects">
-                <h4>Sort by year</h4>
-                <a href="/" onClick={this.onClickChange}>2017</a>
-                <a href="/">2018</a>
-                <Thumbnail image="" title="" date="" link="" />
+
+                <ContentArea title="Projects">
+                    <h4>Sort by ... </h4>
+                    <ListProjects projects={this.state.projects}/>
+                </ContentArea>
+
             </div>
         );
     }

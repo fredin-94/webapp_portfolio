@@ -107,7 +107,7 @@ class Homepage extends Component{
                 <div className="portfolio">
                     <ContentArea title="Most recent work ">
                         <Thumbnail images={this.state.images}/>
-                        <a href="/images">See more</a>
+                        <a href="/projects">See more</a>
                     </ContentArea>
                 </div>                     
                 
