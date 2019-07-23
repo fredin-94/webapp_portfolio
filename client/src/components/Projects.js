@@ -17,7 +17,7 @@ class Projects extends Component{
         axios.get('/api/images')
         .then((res)=>{
             console.log("got a response from MONGO");            
-            this.setState({images: res.data});
+            this.setState({projects: res.data});
             console.log("data: " + res.imgurl +" res: " + JSON.stringify(res));
             console.log("images found: " + this.state.images.length);            
         })

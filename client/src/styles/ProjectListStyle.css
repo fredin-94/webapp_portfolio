@@ -1,0 +1,22 @@
+.item-box{
+    margin: 30px;
+}
+
+.item-box img{
+    max-width: 100%;
+    height: auto;
+    min-width: 300px;
+}
+
+/* .ul-container > li:nth-child(odd){
+    background-color:white;
+} */
+.ul-container > li:nth-child(even){
+    background-color:#bf1a49;
+    color: white;
+}
+
+.ul-container li{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
