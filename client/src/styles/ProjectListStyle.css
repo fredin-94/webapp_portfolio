@@ -11,12 +11,30 @@
 /* .ul-container > li:nth-child(odd){
     background-color:white;
 } */
-.ul-container > li:nth-child(even){
+.div-container > div:nth-child(even){
     background-color:#bf1a49;
     color: white;
 }
 
-.ul-container li{
-    padding-bottom: 50px;
-    padding-top: 50px;
+.div-container div > .img-area:nth-child(even){ /*make every other img on left side*/
+    float: left;
+}
+
+.div-container div{
+}
+
+
+.listSidePicture{
+    min-height: 100px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-area{
+    padding: 15%;
+}
+
+.space{
 }

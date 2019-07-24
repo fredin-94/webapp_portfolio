@@ -38,13 +38,18 @@ class Projects extends Component{
     onFormSubmit = (event) => { //used to onSubmit={this.onFormSubmit}
         event.preventDefault(); //prevent the form to automatically submit itself
     }
-    
+    //should also make sorting options also be per programming language on another select
     render(){
         return(
             <div className="projects">
 
                 <ContentArea title="Projects">
-                    <h4>Sort by ... </h4>
+                    <h4><label for="sorting">Sort by ... </label></h4>
+                    
+                    <select id="sorting" name="sorting">
+                        <option value="Newest">Newest</option>
+                        <option value="Oldest">Oldest</option>
+                    </select> 
                     <ListProjects projects={this.state.projects}/>
                 </ContentArea>
 
