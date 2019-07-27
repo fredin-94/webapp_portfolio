@@ -11,12 +11,20 @@
 /* .ul-container > li:nth-child(odd){
     background-color:white;
 } */
+
+.div-container{
+    margin-top: 5%;
+}
 .div-container > div:nth-child(even){
     background-color:#bf1a49;
     color: white;
 }
 
 .div-container div > .img-area:nth-child(even){ /*make every other img on left side*/
+    float: left;
+}
+
+.img-area{
     float: left;
 }
 
