@@ -8,8 +8,23 @@ class Projects extends Component{
 
     state = { 
         errorMsg: '', 
-        projects: []
+        projects: [],
+        isOldestFirst: true
     };
+
+    sortByyear(){
+        
+        console.log("---> Called sorting ");
+        
+        const {projects} = this.state;
+        let orderedProjects = projects;
+
+        orderedProjects.sort((a,b)=>a.year > b.year);
+
+        this.setState({
+            projects: orderedProjects
+        });
+    }
 
     //Lifecycle methods (some of them):
     componentDidMount = () => {
@@ -17,13 +32,18 @@ class Projects extends Component{
         axios.get('/api/images')
         .then((res)=>{
             console.log("got a response from MONGO");            
-            this.setState({projects: res.data});
-            console.log("data: " + res.imgurl +" res: " + JSON.stringify(res));
-            console.log("images found: " + this.state.images.length);            
+            this.setState({
+                projects: res.data
+            });
+            //console.log("data: " + res.imgurl +" res: " + JSON.stringify(res));
+            //console.log("images found: " + this.state.images.length);  
+            this.sortByyear();          
         })
         .catch((err)=>{
             console.log("got an error from MONGO  -->  " + err);
         });
+
+
     }
 
     onSearchSubmit = (searchTerm) =>{
@@ -39,6 +59,17 @@ class Projects extends Component{
         event.preventDefault(); //prevent the form to automatically submit itself
     }
     //should also make sorting options also be per programming language on another select
+    
+    onClickSelect = (event)=>{
+        console.log("-------->EVENT:::  " + event.target.value);
+        if(event.target.value === 'Newest'){
+            //"reload" page with projects sorted in correct order
+        }
+        else if(event.target.value === 'Oldest'){
+
+        }
+    }
+    
     render(){
         return(
             <div className="projects">
@@ -47,8 +78,8 @@ class Projects extends Component{
                     <h4><label for="sorting">Sort by ... </label></h4>
                     
                     <select id="sorting" name="sorting">
-                        <option value="Newest">Newest</option>
-                        <option value="Oldest">Oldest</option>
+                        <option onClick={this.onClickSelect} value="Newest">Newest</option>
+                        <option onClick={this.onClickSelect} value="Oldest">Oldest</option>
                     </select> 
                     <ListProjects projects={this.state.projects}/>
                 </ContentArea>
