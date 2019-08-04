@@ -6,13 +6,15 @@ import '../styles/ProjectListStyle.css';
 var counter = 1;
 
 const ListProjects = (props)=>{
-    const projects = props.projects.map(({imgurl, title, year, _id, tags, projecturl})=>{ //this is kinda like a forloop for all images we got, then we save the results in a new array called images
+    const projects = props.projects
+        .sort((a,b)=>a.year < b.year)
+        .map(({imgurl, title, year, _id, tags, projecturl})=>{ //this is kinda like a forloop for all images we got, then we save the results in a new array called images
         
         if(imgurl === "" || imgurl===null){
             imgurl = "https://www.tibco.com/blog/wp-content/uploads/2016/12/rsz_bigstock-programming-code-abstract-tech-131906921.jpg";
         }
 
-        console.log("-------------->LIST PROJECTS:" + title);
+        //console.log("-------------->LIST PROJECTS:" + title);
 
         var bgStyle = {
             backgroundImage: 'url(' + imgurl + ')'

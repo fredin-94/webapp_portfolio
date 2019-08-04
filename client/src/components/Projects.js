@@ -24,6 +24,8 @@ class Projects extends Component{
         this.setState({
             projects: orderedProjects
         });
+
+        console.log(this.state.projects);
     }
 
     //Lifecycle methods (some of them):
@@ -37,7 +39,7 @@ class Projects extends Component{
             });
             //console.log("data: " + res.imgurl +" res: " + JSON.stringify(res));
             //console.log("images found: " + this.state.images.length);  
-            this.sortByyear();          
+            //this.sortByyear();          
         })
         .catch((err)=>{
             console.log("got an error from MONGO  -->  " + err);
