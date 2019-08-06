@@ -200,6 +200,34 @@ h1{
         display: inline-flex;
         font-size: 5px;
     }
+    .hideWhenSmall{
+        visibility: hidden;
+    }
+    .underText{
+        padding: 0;
+
+    }
+
+    .parallax-bg{
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .underText{
+        visibility: hidden;
+        display: none;
+        clear: both;
+    }
+
+    .contactInfo{
+        /*padding: 0;*/
+    }
+
+        
+    .mainHeader{
+        /*padding: 0;*/
+    }
 }
 
 

@@ -58,8 +58,8 @@ class Homepage extends Component{
                 <div className="parallax-bg">
                     <Container>
                         <Row>
-                            <Col xs="2"></Col>
-                            <Col xs="8">
+                            <Col xs="1" sm="2"></Col>
+                            <Col xs="10" sm="8">
 
                                 <div className="mainArea">
                                     <div className="mainHeader">
@@ -70,10 +70,10 @@ class Homepage extends Component{
                                     </div>
                                     
                                     <div className="contactInfo">
-                                        <Phone className="icon" size={15}/>
+                                        <Phone className="icon" size={10}/>
                                         098-542-3424
                                         <p>   </p>
-                                        <Email className="icon" size={15}/>
+                                        <Email className="icon" size={10}/>
                                         l.fredin@mail.com
                                     </div>
                                     
@@ -99,7 +99,7 @@ class Homepage extends Component{
 
                                 </div>
                             </Col>
-                            <Col xs="2"></Col>
+                            <Col xs="1"  sm="2"></Col>
                         </Row>
                     </Container>    
                 </div>
@@ -119,7 +119,7 @@ class Homepage extends Component{
                  */}
 
                 <Row>
-                    <Col xs="6" className="noSidePad">
+                    <Col xs="12" sm="12" md="7" xl="6" className="noSidePad">
 
                         <div className="aboutArea">
                             <ContentArea contentColor="#fbf5f3"  title="If you still want to know more ">
@@ -137,7 +137,7 @@ class Homepage extends Component{
                         </div>
 
                     </Col>
-                    <Col xs="6" className="noSidePad">
+                    <Col xs="0" sm="0" md="5" xl="6" className="noSidePad hideWhenSmall">
                         <div className="sidePicture"></div>
                     </Col>
                 </Row>     
