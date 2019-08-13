@@ -9,8 +9,19 @@ class Projects extends Component{
     state = { 
         errorMsg: '', 
         projects: [],
-        isOldestFirst: true
+        isOldestFirst: true,
+        years : []
     };
+
+    showSpecificYear = ()=>{
+        this.state.years.map((years)=>{
+            return(
+                <option 
+                    onClick={this.onClickSelect} 
+                    value="Newest">{years}</option>
+            );
+        })
+    }
 
     sortByyear(){
         
@@ -37,9 +48,12 @@ class Projects extends Component{
             this.setState({
                 projects: res.data
             });
-            //console.log("data: " + res.imgurl +" res: " + JSON.stringify(res));
-            //console.log("images found: " + this.state.images.length);  
-            //this.sortByyear();          
+
+            //this.state.years =  [...new Set(this.state.projects.map(a => a.year))];
+            this.setState({
+                years: [...new Set(this.state.projects.map(a => a.year))]
+            })
+            console.log(this.state.years);
         })
         .catch((err)=>{
             console.log("got an error from MONGO  -->  " + err);
@@ -77,11 +91,10 @@ class Projects extends Component{
             <div className="projects">
 
                 <ContentArea title="Projects">
-                    <h4><label for="sorting">Sort by ... </label></h4>
+                    <h4><label for="sorting">Year:</label></h4>
                     
                     <select id="sorting" name="sorting">
-                        <option onClick={this.onClickSelect} value="Newest">Newest</option>
-                        <option onClick={this.onClickSelect} value="Oldest">Oldest</option>
+                        {this.showSpecificYear()}
                     </select> 
                     <ListProjects projects={this.state.projects}/>
                 </ContentArea>
