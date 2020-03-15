@@ -70,11 +70,11 @@ class Homepage extends Component{
                                     </div>
                                     
                                     <div className="contactInfo">
-                                        <Phone className="icon" size={10}/>
-                                        098-542-3424
+                                        <Phone className="icon" size={14}/>
+                                         098-542-3424
                                         <p>   </p>
-                                        <Email className="icon" size={10}/>
-                                        l.fredin@mail.com
+                                        <Email className="icon" size={14}/>
+                                         l.fredin@mail.com
                                     </div>
                                     
                                     <hr/>
@@ -124,15 +124,13 @@ class Homepage extends Component{
                         <div className="aboutArea">
                             <ContentArea contentColor="#fbf5f3"  title="If you still want to know more ">
                                 <h4>Education:</h4>
-                                    <p>I graduated the SEM program at GU year 2020, yeee</p>
-                                    <p>Then in my future i graduate from some nice masters program, plz</p>
+                                    <p>I graduated the SEM program at GU year 2020</p>
                                 <h4>Experiences:</h4>
-                                    <p>I went to japan and learned shit</p>
-                                    <p>I have worked with some stuff, you know</p>
+                                    <p>3 years in Japan</p>
                                 <h4>Stuff I like:</h4>
-                                    <p>not embedded systems at least!</p>
+                                    <p>Web development! Traveling! Writing!</p>
                                 <h4>Specializations:</h4>
-                                    <p>webdev stuff, kuwashiku ha nai kedo...</p>
+                                    <p>Web development, OOP</p>
                             </ContentArea>
                         </div>
 
