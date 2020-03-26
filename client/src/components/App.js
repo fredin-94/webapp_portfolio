@@ -10,13 +10,20 @@ import ImagesPage from './ImagesPage.js';
 import PostsPage from './PostsPage.js';
 import Projects from './Projects.js';
 
+/*making a comment so i can use this to test another thing...*/
+/*
+block comment
+*/
+//one line comment
 class App extends Component {
-  
-  render() {
-    return (
-      <BrowserRouter>
-        
-          <div className="App">
+  /*another testing comment*/
+  render() {  /*comment after some text*/
+    return ( /*comment after some text no tab*/
+      <BrowserRouter> //one line comment...
+          /*
+          block comment
+          */
+          <div className="App">   //one line comment with tab
                 <Provider store = {store}>
                   <Switch> 
                     <Route exact path='/' component={Homepage}/>
